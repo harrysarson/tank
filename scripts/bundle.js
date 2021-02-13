@@ -167,7 +167,7 @@
 									(m.lineWidth = 5),
 									m.fillRect(0, 0, g, d);
 							}
-							(m.font = '15pt Courier New'),
+							(m.font = Math.round(v.width() / 80) + 'pt Courier New'),
 								(m.fillStyle = l(F.color, T.engineOn)),
 								m.fillText('Refuel Here', Math.ceil(F.s.get(0, 0)), Math.ceil(F.s.get(1, 0) - 15)),
 								(m.lineWidth = 3),
@@ -658,7 +658,7 @@
 							U = 0,
 							Q = 0,
 							X = 0;
-						(m.font = 'bold 18pt Courier New'), m.fillText('Move the mouse to start!', 40, 100);
+						(m.font = 'bold ' + Math.round(v.width() / 65) + 'pt Courier New'), m.fillText('Move the mouse to start!', 40, 100);
 						var Y = function () {
 							requestAnimationFrame(Y);
 							var t = performance.now(),
