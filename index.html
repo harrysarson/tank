@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<title>Tanky</title>
+    <link rel="shortcut icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="viewer">
+    	<canvas id="map" height="400px" width="647px"></canvas>
+    	<table class="controls">
+    	<tr>
+    		<td id="speedBox">
+    		    <div>
+        			<div id="speedText" class="speed-ind">0</div>
+        			<div class="changer-holder">
+            			<div class="changer" id="gas"></div>
+            			<div class="changer" id="break"></div>
+            		</div>
+            	</div>
+    		</td>
+    		<td id="mainAmmoBox">
+    		    <div>
+    				<div id="mainAmmoTitle">Main Gun Ammo</div>
+    				<div id="requestReload" style="display:none;">Please Reload!</div>
+    				<table id="ammo"></table>
+                    <div class="changer-holder">
+            			<div class="changer" id="mainFire"></div>
+            			<div class="changer" id="mainReload"></div>
+            		</div>
+                </div>
+    		</td>
+    		<td id="fuelBox">
+                <div>
+    				<div id="fuelTitle"></div>
+    				<div id="barHolder">
+        				<div id="fuelBar">
+        					<p id="fuelPercent">100</p>
+        					<div id="slider" style="width:100%"></div>
+        				</div>
+        				<div id="extraText"></div>
+        			</div>
+                    <div class="changer-holder">
+        			    <div style="width:100%" class="changer" id="startEng"></div>
+                    </div>
+                </div>
+    		</td>
+    		<td id="targetBox">
+    		    <div>
+    				<span id="normalTargetBox" style="display:block;">
+    					<div>TARGET SPEED</div>
+                        <div>
+                            max <span id="targetMaxText" class="speed-ind">20</span>
+                        </div>
+    				</span>
+    				<span id="alternativeTargetBox" style="display:none;">
+    					<div><br/>Invalid speed entered</div>
+    				</span>
+                    <div class="changer-holder">
+        			    <div style="width:100%" class="changer" id="changeTargetMax"></div>
+                    </div>
+                </div>
+    		</td>
+        	<td id="hitBox">
+        		<div>
+                    <div id="score">0</div>
+                    <div id="bestscore">0</div>
+                    <div class="changer-holder">
+                        <div style="width:100%" class="changer" id="bah"></div>
+                    </div>
+                </div>
+    		</td>
+    	</tr>
+    	</table>
+    </div>
+
+    <script src="scripts/bundle.js"> </script>
+</body>
+</html>
