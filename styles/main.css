@@ -20,7 +20,7 @@ tr {
 body,
 html,
 .viewer {
-	height: 98%;
+	height: 95%;
     max-height: 500px;
 }
 #map {
